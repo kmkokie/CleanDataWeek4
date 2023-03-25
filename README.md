@@ -76,3 +76,20 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
+# Script Overview
+The run_analysis.R script performs the following setps to achieve the assignment goals:
+1.  Downloads source zip file (to data folder of working directory)
+2.  Unzips file (to data folder of working directory)
+3.  Loads required files (readfile for x/y/subject test and train files; features and activity_labels)
+4.  Defines informative column names (columnames using features data set for measurement variables and )
+5.  Builds test and training sets (cbind source files subject+x+y)
+6.  Merges test and training sets (rbind the individual test and training sets)
+7.  Creates subset with mean and std columns (columns that contain any of the following literals "activityId","subjectId","mean()","std()" using grepl across the columNames of the dataset)
+8.  Merges activity labels to add meaningful activity names to data set (merge mean and std data sets with activity labels on activityId)
+9.  Tidies data starting by removing activityId
+10. Groups data by activity and subjectId (group by activity and subjectId)
+11. Calculates mean for mean and std measurements (summarize the mean across all numeric columns with the activity and subjectId group by)
+12. Orders data set by activity and subjectId (order_by)
+13. Prints tidy data to file (tidySet.txt written to local directory)
+
