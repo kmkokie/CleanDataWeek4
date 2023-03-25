@@ -59,16 +59,16 @@ The dataset includes the following files :
 ##Transformation Specifics
 SCRIPT OVERVIEW
 The run_analysis.R script performs the following setps to achieve the assignment goals:
-1.  Download source zip file (to data folder of working directory)
-2.  Unzip file (to data folder of working directory)
-3.  Load required files (readfile for x/y/subject test and train files; features and activity_labels)
-4.  Define informative column names (columnames using features data set for measurement variables and )
-5.  Build test and training sets (cbind source files subject+x+y)
-6.  Merge test and training sets (rbind the individual test and training sets)
-7.  Create subset with mean and std columns (columns that contain any of the following literals "activityId","subjectId","mean()","std()" using grepl across the columNames of the dataset)
-8.  Merge activity labels to add meaningful activity names to data set (merge mean and std data sets with activity labels on activityId)
-9.  Tidy data starting by removing activityId
-10. Group data by activity and subjectId (group by activity and subjectId)
-11. Calculate mean for mean and std measurements (summarize the mean across all numeric columns with the activity and subjectId group by)
-12. Order data set by activity and subjectId (order_by)
-13. Print tidy data to file (tidySet.txt written to local directory)
+1.  Downloads source zip file (to data folder of working directory)
+2.  Unzips file (to data folder of working directory)
+3.  Loads required files (readfile for x/y/subject test and train files; features and activity_labels)
+4.  Defines informative column names (columnames using features data set for measurement variables and )
+5.  Builds test and training sets (cbind source files subject+x+y)
+6.  Merges test and training sets (rbind the individual test and training sets)
+7.  Creates subset with mean and std columns (columns that contain any of the following literals "activityId","subjectId","mean()","std()" using grepl across the columNames of the dataset)
+8.  Merges activity labels to add meaningful activity names to data set (merge mean and std data sets with activity labels on activityId)
+9.  Tidies data starting by removing activityId
+10. Groups data by activity and subjectId (group by activity and subjectId)
+11. Calculates mean for mean and std measurements (summarize the mean across all numeric columns with the activity and subjectId group by)
+12. Orders data set by activity and subjectId (order_by)
+13. Prints tidy data to file (tidySet.txt written to local directory)
