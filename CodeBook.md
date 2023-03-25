@@ -17,72 +17,44 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 The dataset includes the following files :
 
-  'README.txt'
-
-  'features_info.txt': Shows information about the variables used on the feature vector.
-
-  'features.txt': List of all features.
-
-  'activity_labels.txt': Links the class labels with their activity name.
-
-  'train/X_train.txt': Training set.
-
-  'train/y_train.txt': Training labels.
-
-  'test/X_test.txt': Test set.
-
-  'test/y_test.txt': Test labels.
+- 'README.txt'
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+- 'features.txt': List of all features.
+- 'activity_labels.txt': Links the class labels with their activity name.
+- 'train/X_train.txt': Training set.
+- 'train/y_train.txt': Training labels.
+- 'test/X_test.txt': Test set.
+- 'test/y_test.txt': Test labels.
 
 ##The following files are available for the train and test data. Their descriptions are equivalent.
-
-'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-
-'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
-
-'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
-
-'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
+- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
 ##LIBRARIES USED
-dplyr
+- dplyr
 
 ##VARIABLES USED
-  -dataZipUrl = url for source data file to download 
-  -dataDir = directory where data (zip and unzipped) is stored
-  -files = list of files included in the data download
-
-  xtest = table to store contents of X_test.txt
-
-  ytest = table to store contents of y_test.txt
-
-  subjectTest = table to store contents of subject_test.txt
-
-  xtrain = table to store contents of X_train.txt
-
-  ytrain = table to store contents of y_train.txt
-
-  subjectTrain = table to store contents of subject_train.txt
-
-  activityLabels = table to store contents of activity_labels.txt
-
-  features = table to store contents of features.txt"
-
-  testSet = complete set of test data (subject+x+y)
-
-  trainSet = complete set of training data (subject+x+y)
-
-  completeSet = combined set of test and training data
-
-  colNames = list of column in the complete data set
-
-  meanAndStd = logical vector to identify columns that are activityId, subjectID or contain mean() or std() 
-
-  meanStdSet= subset dataset of the desired columns  
-
-  namesMeanStdSet = data set containing activity id, activity name, subject id and mean and std related columns
-
-  tidySet = final "clean" data set that contains the avg for each mean/std measurement by activity id/subject id sorted by activity id and subject id
-
+- dataZipUrl = url for source data file to download 
+- dataDir = directory where data (zip and unzipped) is stored
+- files = list of files included in the data download
+- xtest = table to store contents of X_test.txt
+- ytest = table to store contents of y_test.txt
+- subjectTest = table to store contents of subject_test.txt
+- xtrain = table to store contents of X_train.txt
+- ytrain = table to store contents of y_train.txt
+- subjectTrain = table to store contents of subject_train.txt
+- activityLabels = table to store contents of activity_labels.txt
+- features = table to store contents of features.txt"
+- testSet = complete set of test data (subject+x+y)
+- trainSet = complete set of training data (subject+x+y)
+- completeSet = combined set of test and training data
+- colNames = list of column in the complete data set
+- meanAndStd = logical vector to identify columns that are activityId, subjectID or contain mean() or std() 
+- meanStdSet= subset dataset of the desired columns  
+- namesMeanStdSet = data set containing activity id, activity name, subject id and mean and std related columns
+- tidySet = final "clean" data set that contains the avg for each mean/std measurement by activity id/subject id sorted by activity id and subject id
 
 ##Transformation Specifics
 SCRIPT OVERVIEW
