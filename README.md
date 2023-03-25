@@ -12,7 +12,7 @@ Create one R script called run_analysis.R that does the following.
 5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 # Final Output
-The tidySet.txt text file containing the average for each mean and std measurement by actvity ID and student ID
+The tidySet.txt text file containing the average for each mean and std measurement by actvity and student 
 
 # Data to be Used
 
