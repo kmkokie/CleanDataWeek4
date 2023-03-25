@@ -2,7 +2,7 @@
 JHU Getting and Cleaning Data Week 4 Project
 
 
-ASSIGNMENT
+# Assignment
 
 Create one R script called run_analysis.R that does the following. 
 1.  Merges the training and the test sets to create one data set.
@@ -11,7 +11,10 @@ Create one R script called run_analysis.R that does the following.
 4.  Appropriately labels the data set with descriptive variable names. 
 5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-DATA TO BE USED
+# Final Output
+The tidySet.txt text file containing the average for each mean and std measurement by actvity ID and student ID
+
+# Data to be Used
 
 Data to be used in this project is data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
