@@ -11,21 +11,6 @@ Create one R script called run_analysis.R that does the following.
 4.  Appropriately labels the data set with descriptive variable names. 
 5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-SCRIPT OVERVIEW
-The script performs the following setps to achieve the assignment goals:
-1.  Download source zip file
-2.  Unzip file
-3.  Load required files
-4.  Build test and training sets
-5.  Define informative column names
-6.  Merge test and training sets
-7.  Create subset with mean and std columns
-8.  Merge activity labels to add meaninful activity names to data set
-9.  Tidy data by grouping data by activityID and subjectId
-10. Calculate mean for mean and std measurements
-11. Order data set by activityID and subjectId
-12. Print tidy data to file 
-
 DATA TO BE USED
 
 Data to be used in this project is data collected from the accelerometers from the Samsung Galaxy S smartphone.
