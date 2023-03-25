@@ -58,7 +58,7 @@ The dataset includes the following files :
 
 ##Transformation Specifics
 SCRIPT OVERVIEW
-The script performs the following setps to achieve the assignment goals:
+The run_analysis.R script performs the following setps to achieve the assignment goals:
 1.  Download source zip file (to data folder of working directory)
 2.  Unzip file (to data folder of working directory)
 3.  Load required files (readfile for x/y/subject test and train files; features and activity_labels)
