@@ -47,11 +47,9 @@ The dataset includes the following files :
 dplyr
 
 ##VARIABLES USED
-  dataZipUrl = url for source data file to download 
-  
-  dataDir = directory where data (zip and unzipped) is stored
-  
-  files = list of files included in the data download
+  -dataZipUrl = url for source data file to download 
+  -dataDir = directory where data (zip and unzipped) is stored
+  -files = list of files included in the data download
 
   xtest = table to store contents of X_test.txt
 
@@ -87,3 +85,17 @@ dplyr
 
 
 ##Transformation Specifics
+SCRIPT OVERVIEW
+The script performs the following setps to achieve the assignment goals:
+1.  Download source zip file (to data folder of working directory)
+2.  Unzip file (to data folder of working directory)
+3.  Load required files (readfile for x/y/subject test and train files; features and activity_labels)
+4.  Define informative column names (columnames using features data set for measurement variables and )
+5.  Build test and training sets (cbind source files subject+x+y)
+6.  Merge test and training sets (rbind the individual test and training sets)
+7.  Create subset with mean and std columns (columns that contain any of the following literals "activityId","subjectId","mean()","std()" using grepl across the columNames of the dataset)
+8.  Merge activity labels to add meaninful activity names to data set (merge mean and std data sets with activity labels on activityId)
+9.  Tidy data by grouping data by activityID and subjectId (group by activityId and subjectId)
+10. Calculate mean for mean and std measurements (summarize the mean across all numeric columns with the activityId and subjectId group by)
+11. Order data set by activityId and subjectId (order_by)
+12. Print tidy data to file (tidySet.txt written to local directory)
